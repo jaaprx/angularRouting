@@ -20,14 +20,14 @@
 <body ng-app="animateApp">
 
   <div>
-    <a href="#" class="btn btn-primary btn-lg">Home</a>
-    <a href="#about" class="btn btn-success btn-lg">About</a>
-    <a href="#contact" class="btn btn-danger btn-lg">Contact</a>
+    <a base-navigate href="#home" class="btn btn-primary btn-lg">Home</a>
+    <a base-navigate href="#about" class="btn btn-success btn-lg">About</a>
+    <a base-navigate href="#contact" class="btn btn-danger btn-lg">Contact</a>
   </div>
   
     <!-- inject our views using ng-view -->
 	<!-- each angular controller applies a different class here -->
-	<div class="page {{ pageClass }}" ng-view></div>
+	<div class="page" ng-view></div>
 		
 </body>
 </html>
